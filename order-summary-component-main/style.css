@@ -21,8 +21,8 @@ body {
 }
 
 .card {
+  margin-top: 40px;
   width: 450px;
-  /* height: 600px; */
   background-color: white;
   border-radius: 10px;
 }
@@ -120,4 +120,22 @@ img {
 
 .cancel:hover {
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 300px;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 0 45px;
+  }
+
+  .container {
+    background-color: hsl(225, 100%, 98%);
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
